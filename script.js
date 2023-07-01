@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
     "#00CED1",
     "#FF69B4",
     "#4682B4",
-    "#800000"
+    "#800000",
+    "#8A3E94"
   ];
 
   newQuoteBtn.addEventListener('click', function() {
@@ -108,11 +109,9 @@ function getTimeOfDay() {
 
   if (hour >= 5 && hour < 12) {
     return "morning";
-  } else if (hour >= 12 && hour < 16) {
+  } else if (hour >= 12 && hour < 18) {
     return "afternoon";
-  } else if (hour >= 16 && hour < 20)  {
-    return "evening";
   } else {
-    return "night";
+    return "evening/night";
   }
 }
